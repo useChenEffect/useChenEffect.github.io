@@ -1,0 +1,54 @@
+name: 部署文档到 Master 分支
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          
+      - name: 安装依赖
+        run: pnpm install
+        
+      - name: 构建文档
+        run: pnpm run docs:build
+        
+      - name: 检查构建结果
+        run: |
+          echo "检查 dist 目录内容："
+          ls -la dist/ || echo "dist 目录不存在"
+          if [ -d "dist" ] && [ "$(ls -A dist)" ]; then
+            echo "dist 目录存在且不为空"
+            echo "dist 目录内容："
+            find dist -type f | head -10
+          else
+            echo "错误：dist 目录不存在或为空"
+            exit 1
+          fi
+        
+      - name: 部署到 Master 分支
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: master
+          force_orphan: true
+          commit_message: '自动部署文档 - ${{ github.sha }}' 

@@ -1,0 +1,27 @@
+{
+  "include": [".vitepress/**/*", "src/**/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    // "rootDir": "./src",
+    "rootDirs": [".vitepress", "src"],
+    "outDir": "./dist",
+    "target": "ESNext",
+    // "module": "ESNext",
+    "lib": [
+      "DOM",
+      "ESNext",
+      "DOM.Iterable"
+    ],
+    "declaration": true,
+    "declarationDir": "./types",
+    "declarationMap": false,
+    "downlevelIteration": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+  }
+}
