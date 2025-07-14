@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Runtime API Examples | Bhan's Frontend KB</title>
+    <meta name="description" content="前端技术知识分享平台 - 实用技术、开发工具、性能优化、问题解决方案">
+    <meta name="generator" content="VitePress v1.6.3">
+    <link rel="preload stylesheet" href="/assets/style.B-dKH2C8.css" as="style">
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style">
+    
+    <script type="module" src="/assets/app.Bix3xTyd.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/theme.CPv04rql.js">
+    <link rel="modulepreload" href="/assets/chunks/framework.BHpayLOB.js">
+    <link rel="modulepreload" href="/assets/api-examples.md.B82lmXEa.lean.js">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="theme-color" content="#3c8772">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh-CN">
+    <meta property="og:title" content="Bhan's Frontend KB | 前端技术知识分享">
+    <meta property="og:site_name" content="Bhan's Frontend KB">
+    <meta property="og:image" content="/og-image.png">
+    <meta property="og:url" content="https://usechen-effect.github.io/">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-21cea568><!--[--><!--]--><!--[--><span tabindex="-1" data-v-dc0d3c44></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-dc0d3c44>Skip to content</a><!--]--><!----><header class="VPNav" data-v-21cea568 data-v-94e72f45><div class="VPNavBar" data-v-94e72f45 data-v-9bcde745><div class="wrapper" data-v-9bcde745><div class="container" data-v-9bcde745><div class="title" data-v-9bcde745><div class="VPNavBarTitle has-sidebar" data-v-9bcde745 data-v-bd9c3d5f><a class="title" href="/" data-v-bd9c3d5f><!--[--><!--]--><!--[--><img class="VPImage logo" src="/logo.svg" alt data-v-1ed6dd7f><!--]--><span data-v-bd9c3d5f>Bhan's KB</span><!--[--><!--]--></a></div></div><div class="content" data-v-9bcde745><div class="content-body" data-v-9bcde745><!--[--><!--]--><div class="VPNavBarSearch search" data-v-9bcde745><!--[--><!----><div id="local-search"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><span class="vp-icon DocSearch-Search-Icon"></span><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-9bcde745 data-v-c1a79121><span id="main-nav-aria-label" class="visually-hidden" data-v-c1a79121> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/" tabindex="0" data-v-c1a79121 data-v-a3d5a789><!--[--><span data-v-a3d5a789>🏠 首页</span><!--]--></a><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-c1a79121 data-v-b8e75b17><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-b8e75b17><span class="text" data-v-b8e75b17><!----><span data-v-b8e75b17>📚 知识库</span><span class="vpi-chevron-down text-icon" data-v-b8e75b17></span></span></button><div class="menu" data-v-b8e75b17><div class="VPMenu" data-v-b8e75b17 data-v-8d8aa091><div class="items" data-v-8d8aa091><!--[--><!--[--><div class="VPMenuLink" data-v-8d8aa091 data-v-a457fd5c><a class="VPLink link" href="/frontend-tips.html" data-v-a457fd5c><!--[--><span data-v-a457fd5c>前端技巧</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-8d8aa091 data-v-a457fd5c><a class="VPLink link" href="/dev-tools.html" data-v-a457fd5c><!--[--><span data-v-a457fd5c>开发工具</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-8d8aa091 data-v-a457fd5c><a class="VPLink link" href="/performance.html" data-v-a457fd5c><!--[--><span data-v-a457fd5c>性能优化</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-8d8aa091 data-v-a457fd5c><a class="VPLink link" href="/solutions.html" data-v-a457fd5c><!--[--><span data-v-a457fd5c>问题解决</span><!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/tools.html" tabindex="0" data-v-c1a79121 data-v-a3d5a789><!--[--><span data-v-a3d5a789>🔧 工具集</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/markdown-examples.html" tabindex="0" data-v-c1a79121 data-v-a3d5a789><!--[--><span data-v-a3d5a789>📖 示例</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/tech-trends.html" tabindex="0" data-v-c1a79121 data-v-a3d5a789><!--[--><span data-v-a3d5a789>🌟 趋势</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-9bcde745 data-v-7e1f1562><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-7e1f1562 data-v-f8a56f35 data-v-25dcf955><span class="check" data-v-25dcf955><span class="icon" data-v-25dcf955><!--[--><span class="vpi-sun sun" data-v-f8a56f35></span><span class="vpi-moon moon" data-v-f8a56f35></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-9bcde745 data-v-a4cc9f11 data-v-97c977bb><!--[--><a class="VPSocialLink no-icon" href="https://github.com/useChenEffect" aria-label="github" target="_blank" rel="noopener" data-v-97c977bb data-v-e1e5337f><span class="vpi-social-github"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-9bcde745 data-v-3092ae8c data-v-b8e75b17><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-b8e75b17><span class="vpi-more-horizontal icon" data-v-b8e75b17></span></button><div class="menu" data-v-b8e75b17><div class="VPMenu" data-v-b8e75b17 data-v-8d8aa091><!----><!--[--><!--[--><!----><div class="group" data-v-3092ae8c><div class="item appearance" data-v-3092ae8c><p class="label" data-v-3092ae8c>Appearance</p><div class="appearance-action" data-v-3092ae8c><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-3092ae8c data-v-f8a56f35 data-v-25dcf955><span class="check" data-v-25dcf955><span class="icon" data-v-25dcf955><!--[--><span class="vpi-sun sun" data-v-f8a56f35></span><span class="vpi-moon moon" data-v-f8a56f35></span><!--]--></span></span></button></div></div></div><div class="group" data-v-3092ae8c><div class="item social-links" data-v-3092ae8c><div class="VPSocialLinks social-links-list" data-v-3092ae8c data-v-97c977bb><!--[--><a class="VPSocialLink no-icon" href="https://github.com/useChenEffect" aria-label="github" target="_blank" rel="noopener" data-v-97c977bb data-v-e1e5337f><span class="vpi-social-github"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-9bcde745 data-v-04d7465d><span class="container" data-v-04d7465d><span class="top" data-v-04d7465d></span><span class="middle" data-v-04d7465d></span><span class="bottom" data-v-04d7465d></span></span></button></div></div></div></div><div class="divider" data-v-9bcde745><div class="divider-line" data-v-9bcde745></div></div></div><!----></header><div class="VPLocalNav has-sidebar empty" data-v-21cea568 data-v-e8fcfb95><div class="container" data-v-e8fcfb95><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-e8fcfb95><span class="vpi-align-left menu-icon" data-v-e8fcfb95></span><span class="menu-text" data-v-e8fcfb95>Menu</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-e8fcfb95 data-v-49edd5ff><button data-v-49edd5ff>Return to top</button><!----></div></div></div><aside class="VPSidebar" data-v-21cea568 data-v-867b2a78><div class="curtain" data-v-867b2a78></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-867b2a78><span class="visually-hidden" id="sidebar-aria-label" data-v-867b2a78> Sidebar Navigation </span><!--[--><!--]--><!--[--><div class="no-transition group" data-v-6a2bcf88><section class="VPSidebarItem level-0 has-active" data-v-6a2bcf88 data-v-bf58517c><div class="item" role="button" tabindex="0" data-v-bf58517c><div class="indicator" data-v-bf58517c></div><h2 class="text" data-v-bf58517c>快速开始</h2><!----></div><div class="items" data-v-bf58517c><!--[--><div class="VPSidebarItem level-1 is-link" data-v-bf58517c data-v-bf58517c><div class="item" data-v-bf58517c><div class="indicator" data-v-bf58517c></div><a class="VPLink link link" href="/markdown-examples.html" data-v-bf58517c><!--[--><p class="text" data-v-bf58517c>Markdown 示例</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-bf58517c data-v-bf58517c><div class="item" data-v-bf58517c><div class="indicator" data-v-bf58517c></div><a class="VPLink link link" href="/api-examples.html" data-v-bf58517c><!--[--><p class="text" data-v-bf58517c>API 示例</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-21cea568 data-v-400ddb96><div class="VPDoc has-sidebar has-aside" data-v-400ddb96 data-v-8f251193><!--[--><!--]--><div class="container" data-v-8f251193><div class="aside" data-v-8f251193><div class="aside-curtain" data-v-8f251193></div><div class="aside-container" data-v-8f251193><div class="aside-content" data-v-8f251193><div class="VPDocAside" data-v-8f251193 data-v-cba1c8ad><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-cba1c8ad data-v-01b8ea60><div class="content" data-v-01b8ea60><div class="outline-marker" data-v-01b8ea60></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-01b8ea60>页面导航</div><ul class="VPDocOutlineItem root" data-v-01b8ea60 data-v-24eaaa9b><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-cba1c8ad></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-8f251193><div class="content-container" data-v-8f251193><!--[--><!--]--><main class="main" data-v-8f251193><div style="position:relative;" class="vp-doc _api-examples" data-v-8f251193><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">import { useData } from &#39;vitepress&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">const { theme, page, frontmatter } = useData()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;/script&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Theme Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ theme }}&lt;/pre&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Page Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ page }}&lt;/pre&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Page Frontmatter</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ frontmatter }}&lt;/pre&gt;</span></span></code></pre></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;logo&quot;: &quot;/logo.svg&quot;,
+  &quot;siteTitle&quot;: &quot;Bhan&#39;s KB&quot;,
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;🏠 首页&quot;,
+      &quot;link&quot;: &quot;/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;📚 知识库&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;前端技巧&quot;,
+          &quot;link&quot;: &quot;/frontend-tips&quot;
+        },
+        {
+          &quot;text&quot;: &quot;开发工具&quot;,
+          &quot;link&quot;: &quot;/dev-tools&quot;
+        },
+        {
+          &quot;text&quot;: &quot;性能优化&quot;,
+          &quot;link&quot;: &quot;/performance&quot;
+        },
+        {
+          &quot;text&quot;: &quot;问题解决&quot;,
+          &quot;link&quot;: &quot;/solutions&quot;
+        }
+      ]
+    },
+    {
+      &quot;text&quot;: &quot;🔧 工具集&quot;,
+      &quot;link&quot;: &quot;/tools&quot;
+    },
+    {
+      &quot;text&quot;: &quot;📖 示例&quot;,
+      &quot;link&quot;: &quot;/markdown-examples&quot;
+    },
+    {
+      &quot;text&quot;: &quot;🌟 趋势&quot;,
+      &quot;link&quot;: &quot;/tech-trends&quot;
+    }
+  ],
+  &quot;sidebar&quot;: {
+    &quot;/&quot;: [
+      {
+        &quot;text&quot;: &quot;快速开始&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;Markdown 示例&quot;,
+            &quot;link&quot;: &quot;/markdown-examples&quot;
+          },
+          {
+            &quot;text&quot;: &quot;API 示例&quot;,
+            &quot;link&quot;: &quot;/api-examples&quot;
+          }
+        ]
+      }
+    ],
+    &quot;/frontend-tips/&quot;: [
+      {
+        &quot;text&quot;: &quot;前端技巧&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;text&quot;: &quot;JavaScript 技巧&quot;,
+            &quot;link&quot;: &quot;/frontend-tips/javascript&quot;
+          },
+          {
+            &quot;text&quot;: &quot;CSS 技巧&quot;,
+            &quot;link&quot;: &quot;/frontend-tips/css&quot;
+          },
+          {
+            &quot;text&quot;: &quot;Vue.js 实践&quot;,
+            &quot;link&quot;: &quot;/frontend-tips/vue&quot;
+          },
+          {
+            &quot;text&quot;: &quot;React 技巧&quot;,
+            &quot;link&quot;: &quot;/frontend-tips/react&quot;
+          }
+        ]
+      }
+    ]
+  },
+  &quot;socialLinks&quot;: [
+    {
+      &quot;icon&quot;: &quot;github&quot;,
+      &quot;link&quot;: &quot;https://github.com/useChenEffect&quot;
+    }
+  ],
+  &quot;search&quot;: {
+    &quot;provider&quot;: &quot;local&quot;,
+    &quot;options&quot;: {
+      &quot;locales&quot;: {
+        &quot;zh&quot;: {
+          &quot;translations&quot;: {
+            &quot;button&quot;: {
+              &quot;buttonText&quot;: &quot;搜索文档&quot;,
+              &quot;buttonAriaLabel&quot;: &quot;搜索文档&quot;
+            },
+            &quot;modal&quot;: {
+              &quot;noResultsText&quot;: &quot;无法找到相关结果&quot;,
+              &quot;resetButtonTitle&quot;: &quot;清除查询条件&quot;,
+              &quot;footer&quot;: {
+                &quot;selectText&quot;: &quot;选择&quot;,
+                &quot;navigateText&quot;: &quot;切换&quot;
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  &quot;editLink&quot;: {
+    &quot;pattern&quot;: &quot;https://github.com/useChenEffect/useChenEffect.github.io/edit/main/:path&quot;,
+    &quot;text&quot;: &quot;在 GitHub 上编辑此页面&quot;
+  },
+  &quot;footer&quot;: {
+    &quot;message&quot;: &quot;基于 MIT 许可发布&quot;,
+    &quot;copyright&quot;: &quot;版权所有 © 2024-2025 Bhan&quot;
+  },
+  &quot;docFooter&quot;: {
+    &quot;prev&quot;: &quot;上一页&quot;,
+    &quot;next&quot;: &quot;下一页&quot;
+  },
+  &quot;outline&quot;: {
+    &quot;label&quot;: &quot;页面导航&quot;
+  },
+  &quot;lastUpdated&quot;: {
+    &quot;text&quot;: &quot;最后更新于&quot;,
+    &quot;formatOptions&quot;: {
+      &quot;dateStyle&quot;: &quot;short&quot;,
+      &quot;timeStyle&quot;: &quot;medium&quot;
+    }
+  }
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;Runtime API Examples&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;outline&quot;: &quot;deep&quot;
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;api-examples.md&quot;,
+  &quot;lastUpdated&quot;: 1750872866000
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;outline&quot;: &quot;deep&quot;
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div></main><footer class="VPDocFooter" data-v-8f251193 data-v-bc55b4d9><!--[--><!--]--><div class="edit-info" data-v-bc55b4d9><div class="edit-link" data-v-bc55b4d9><a class="VPLink link vp-external-link-icon no-icon edit-link-button" href="https://github.com/useChenEffect/useChenEffect.github.io/edit/main/api-examples.md" target="_blank" rel="noreferrer" data-v-bc55b4d9><!--[--><span class="vpi-square-pen edit-link-icon" data-v-bc55b4d9></span> 在 GitHub 上编辑此页面<!--]--></a></div><div class="last-updated" data-v-bc55b4d9><p class="VPLastUpdated" data-v-bc55b4d9 data-v-ffaf3ada>最后更新于: <time datetime="2025-06-25T17:34:26.000Z" data-v-ffaf3ada></time></p></div></div><nav class="prev-next" aria-labelledby="doc-footer-aria-label" data-v-bc55b4d9><span class="visually-hidden" id="doc-footer-aria-label" data-v-bc55b4d9>Pager</span><div class="pager" data-v-bc55b4d9><a class="VPLink link pager-link prev" href="/markdown-examples.html" data-v-bc55b4d9><!--[--><span class="desc" data-v-bc55b4d9>上一页</span><span class="title" data-v-bc55b4d9>Markdown 示例</span><!--]--></a></div><div class="pager" data-v-bc55b4d9><!----></div></nav></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter has-sidebar" data-v-21cea568 data-v-c979b460><div class="container" data-v-c979b460><p class="message" data-v-c979b460>基于 MIT 许可发布</p><p class="copyright" data-v-c979b460>版权所有 © 2024-2025 Bhan</p></div></footer><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"api-examples.md\":\"B82lmXEa\",\"index.md\":\"DZ0UAP5x\",\"markdown-examples.md\":\"Cehdj-VY\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"en-US\",\"dir\":\"ltr\",\"title\":\"Bhan's Frontend KB\",\"description\":\"前端技术知识分享平台 - 实用技术、开发工具、性能优化、问题解决方案\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"logo\":\"/logo.svg\",\"siteTitle\":\"Bhan's KB\",\"nav\":[{\"text\":\"🏠 首页\",\"link\":\"/\"},{\"text\":\"📚 知识库\",\"items\":[{\"text\":\"前端技巧\",\"link\":\"/frontend-tips\"},{\"text\":\"开发工具\",\"link\":\"/dev-tools\"},{\"text\":\"性能优化\",\"link\":\"/performance\"},{\"text\":\"问题解决\",\"link\":\"/solutions\"}]},{\"text\":\"🔧 工具集\",\"link\":\"/tools\"},{\"text\":\"📖 示例\",\"link\":\"/markdown-examples\"},{\"text\":\"🌟 趋势\",\"link\":\"/tech-trends\"}],\"sidebar\":{\"/\":[{\"text\":\"快速开始\",\"items\":[{\"text\":\"Markdown 示例\",\"link\":\"/markdown-examples\"},{\"text\":\"API 示例\",\"link\":\"/api-examples\"}]}],\"/frontend-tips/\":[{\"text\":\"前端技巧\",\"items\":[{\"text\":\"JavaScript 技巧\",\"link\":\"/frontend-tips/javascript\"},{\"text\":\"CSS 技巧\",\"link\":\"/frontend-tips/css\"},{\"text\":\"Vue.js 实践\",\"link\":\"/frontend-tips/vue\"},{\"text\":\"React 技巧\",\"link\":\"/frontend-tips/react\"}]}]},\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/useChenEffect\"}],\"search\":{\"provider\":\"local\",\"options\":{\"locales\":{\"zh\":{\"translations\":{\"button\":{\"buttonText\":\"搜索文档\",\"buttonAriaLabel\":\"搜索文档\"},\"modal\":{\"noResultsText\":\"无法找到相关结果\",\"resetButtonTitle\":\"清除查询条件\",\"footer\":{\"selectText\":\"选择\",\"navigateText\":\"切换\"}}}}}}},\"editLink\":{\"pattern\":\"https://github.com/useChenEffect/useChenEffect.github.io/edit/main/:path\",\"text\":\"在 GitHub 上编辑此页面\"},\"footer\":{\"message\":\"基于 MIT 许可发布\",\"copyright\":\"版权所有 © 2024-2025 Bhan\"},\"docFooter\":{\"prev\":\"上一页\",\"next\":\"下一页\"},\"outline\":{\"label\":\"页面导航\"},\"lastUpdated\":{\"text\":\"最后更新于\",\"formatOptions\":{\"dateStyle\":\"short\",\"timeStyle\":\"medium\"}}},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
